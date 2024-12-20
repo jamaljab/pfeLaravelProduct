@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\phpunit.xml" tests="10" assertions="34" errors="0" failures="0" skipped="0" time="1.463406">
+    <testsuite name="Feature" tests="10" assertions="34" errors="0" failures="0" skipped="0" time="1.463406">
+      <testsuite name="Tests\Feature\CategoryControllerTest" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\CategoryControllerTest.php" tests="5" assertions="14" errors="0" failures="0" skipped="0" time="1.179745">
+        <testcase name="test_store" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\CategoryControllerTest.php" line="18" class="Tests\Feature\CategoryControllerTest" classname="Tests.Feature.CategoryControllerTest" assertions="3" time="1.004369"/>
+        <testcase name="test_index" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\CategoryControllerTest.php" line="36" class="Tests\Feature\CategoryControllerTest" classname="Tests.Feature.CategoryControllerTest" assertions="4" time="0.071686"/>
+        <testcase name="test_show" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\CategoryControllerTest.php" line="58" class="Tests\Feature\CategoryControllerTest" classname="Tests.Feature.CategoryControllerTest" assertions="2" time="0.041152"/>
+        <testcase name="test_update" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\CategoryControllerTest.php" line="74" class="Tests\Feature\CategoryControllerTest" classname="Tests.Feature.CategoryControllerTest" assertions="3" time="0.036471"/>
+        <testcase name="test_destroy" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\CategoryControllerTest.php" line="94" class="Tests\Feature\CategoryControllerTest" classname="Tests.Feature.CategoryControllerTest" assertions="2" time="0.026066"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ProductControllerTest" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\ProductControllerTest.php" tests="5" assertions="20" errors="0" failures="0" skipped="0" time="0.283661">
+        <testcase name="test_index" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\ProductControllerTest.php" line="19" class="Tests\Feature\ProductControllerTest" classname="Tests.Feature.ProductControllerTest" assertions="4" time="0.058481"/>
+        <testcase name="test_show" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\ProductControllerTest.php" line="44" class="Tests\Feature\ProductControllerTest" classname="Tests.Feature.ProductControllerTest" assertions="2" time="0.043006"/>
+        <testcase name="test_store" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\ProductControllerTest.php" line="68" class="Tests\Feature\ProductControllerTest" classname="Tests.Feature.ProductControllerTest" assertions="6" time="0.069143"/>
+        <testcase name="test_update" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\ProductControllerTest.php" line="95" class="Tests\Feature\ProductControllerTest" classname="Tests.Feature.ProductControllerTest" assertions="6" time="0.059251"/>
+        <testcase name="test_destroy" file="C:\Users\user\ProjetPFELaravel\laravelProjectPfe\tests\Feature\ProductControllerTest.php" line="123" class="Tests\Feature\ProductControllerTest" classname="Tests.Feature.ProductControllerTest" assertions="2" time="0.053779"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

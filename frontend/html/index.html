@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Produits et Catégories</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <a href="#categories" id="link-categories">Catégories</a>
+        <a href="#products" id="link-products">Produits</a>
+    </div>
+
+
+    <div id="message-container" class="message-container"></div>
+
+
+    <div id="edit-category-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Modifier la catégorie</h2>
+            <form id="edit-category-form">
+                <input type="hidden" id="edit-category-id">
+                <input type="text" id="edit-category-name" placeholder="Nom de la catégorie" required>
+                <button type="submit">Modifier</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="delete-category-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Confirmer la suppression</h2>
+            <p>Êtes-vous sûr de vouloir supprimer cette catégorie ?</p>
+            <button id="confirm-delete-btn">Supprimer</button>
+            <button id="cancel-delete-btn">Annuler</button>
+        </div>
+    </div>
+
+
+
+    <div id="edit-product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Modifier le produit</h2>
+            <form id="edit-product-form">
+                <input type="hidden" id="edit-product-id">
+                <input type="text" id="edit-product-name" placeholder="Nom du produit" required>
+                <textarea id="edit-product-description" placeholder="Description" required></textarea>
+                <input type="number" id="edit-product-price" placeholder="Prix" required>
+                <select id="edit-product-category" name="edit-product-category" required>
+                    <option value="">Sélectionner une catégorie</option>
+                </select>
+                <button type="submit">Modifier</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="delete-product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Confirmer la suppression</h2>
+            <p>Êtes-vous sûr de vouloir supprimer ce produit ?</p>
+            <button id="confirm-deleteProduct-btn">Supprimer</button>
+            <button id="cancel-deleteProduct-btn" >Annuler</button>
+        </div>
+    </div>
+    
+    <div id="add-product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Ajouter un produit</h2>
+            <form id="add-product-form" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Nom du produit" required>
+                <textarea name="description" placeholder="Description" required></textarea>
+                <input type="number" name="price" step="0.01" placeholder="Prix" required>
+                <select name="category_id" required>
+                    <option value="">Sélectionner une catégorie</option>
+                </select>
+                <input type="file" name="image" accept="image/*">
+                <img id="image-preview" src="" alt="Aperçu" style="display:none; max-width: 200px;">
+                <button type="submit">Ajouter Produit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="categories-section" id="categories-section">
+            <h2>Catégories</h2>
+            <form id="category-form" class="category-form">
+                <input type="text" id="category-name" placeholder="Nom de la catégorie" required>
+                <button type="submit">Ajouter Catégorie</button>
+            </form>
+            <div id="categories-list"></div>
+        </div>
+
+
+        <div class="products-section" id="products-section" style="display: block;">
+            <h2>Produits</h2>
+            <select id="category-filter" name="category-filter">
+                <option value="">Tous les produits</option>
+            </select>
+            <select id="price-sort" name="price-sort">
+                <option value="">Trier par prix</option>
+                <option value="asc">Prix croissant</option>
+                <option value="desc">Prix décroissant</option>
+            </select>
+            <button id="add-product-btn">Ajouter un Produit</button>
+            <div id="products-list"></div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/categories.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="/js/myscript.js"></script>
+</body>
+</html>
